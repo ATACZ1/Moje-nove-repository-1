@@ -30,35 +30,35 @@ export default function Contact() {
             </h2>
             <div className="divider" />
 
-            <p className="font-sans font-light text-sand-600 leading-relaxed mb-10">
+            <p className="font-sans font-medium text-sand-900 leading-relaxed mb-10">
               Rádi vás přivítáme. Napište nám přes formulář nebo nás kontaktujte přímo.
               Odpovídáme zpravidla do 24 hodin.
             </p>
 
             <div className="space-y-6">
               <div>
-                <div className="text-xs tracking-widest uppercase font-sans font-light text-sand-400 mb-1">Adresa</div>
-                <p className="font-sans font-light text-sand-700">
+                <div className="text-xs tracking-widest uppercase font-sans font-medium text-sand-700 mb-1">Adresa</div>
+                <p className="font-sans font-medium text-sand-700">
                   Penzion Vysočina<br />
                   Škrdlovice 25<br />
                   591 01 Škrdlovice
                 </p>
               </div>
               <div>
-                <div className="text-xs tracking-widest uppercase font-sans font-light text-sand-400 mb-1">Telefon</div>
-                <a href="tel:+420566676264" className="font-sans font-light text-sand-700 hover:text-sand-900 transition-colors">
+                <div className="text-xs tracking-widest uppercase font-sans font-medium text-sand-700 mb-1">Telefon</div>
+                <a href="tel:+420566676264" className="font-sans font-medium text-sand-700 hover:text-sand-900 transition-colors">
                   +420 566 676 264
                 </a>
               </div>
               <div>
-                <div className="text-xs tracking-widest uppercase font-sans font-light text-sand-400 mb-1">E-mail</div>
-                <a href="mailto:info@penzionvysocina.eu" className="font-sans font-light text-sand-700 hover:text-sand-900 transition-colors">
+                <div className="text-xs tracking-widest uppercase font-sans font-medium text-sand-700 mb-1">E-mail</div>
+                <a href="mailto:info@penzionvysocina.eu" className="font-sans font-medium text-sand-700 hover:text-sand-900 transition-colors">
                   info@penzionvysocina.eu
                 </a>
               </div>
               <div>
-                <div className="text-xs tracking-widest uppercase font-sans font-light text-sand-400 mb-1">Dostupnost</div>
-                <p className="font-sans font-light text-sand-600 text-sm">
+                <div className="text-xs tracking-widest uppercase font-sans font-medium text-sand-700 mb-1">Dostupnost</div>
+                <p className="font-sans font-medium text-sand-900 text-sm">
                   Parkování zdarma přímo u penzionu.
                 </p>
               </div>
@@ -70,8 +70,8 @@ export default function Contact() {
             {sent ? (
               <div className="flex flex-col items-center justify-center h-full min-h-[400px] text-center">
                 <div className="w-12 h-px bg-sand-400 mx-auto mb-8" />
-                <h3 className="font-serif font-light text-3xl text-sand-800 mb-4">Děkujeme!</h3>
-                <p className="font-sans font-light text-sand-500">
+                <h3 className="font-serif font-normal text-3xl text-sand-800 mb-4">Děkujeme!</h3>
+                <p className="font-sans font-medium text-sand-800">
                   Vaši poptávku jsme přijali. Ozveme se vám co nejdříve.
                 </p>
               </div>
@@ -79,7 +79,7 @@ export default function Contact() {
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid sm:grid-cols-2 gap-6">
                   <div>
-                    <label className="text-xs tracking-widest uppercase font-sans font-light text-sand-400 mb-2 block">
+                    <label className="text-xs tracking-widest uppercase font-sans font-medium text-sand-700 mb-2 block">
                       Jméno *
                     </label>
                     <input
@@ -88,11 +88,11 @@ export default function Contact() {
                       required
                       value={form.name}
                       onChange={handleChange}
-                      className="w-full border border-sand-200 bg-transparent px-4 py-3 text-sm font-sans font-light text-sand-700 outline-none focus:border-sand-500 transition-colors"
+                      className="w-full border border-sand-200 bg-transparent px-4 py-3 text-sm font-sans font-medium text-sand-700 outline-none focus:border-sand-500 transition-colors"
                     />
                   </div>
                   <div>
-                    <label className="text-xs tracking-widest uppercase font-sans font-light text-sand-400 mb-2 block">
+                    <label className="text-xs tracking-widest uppercase font-sans font-medium text-sand-700 mb-2 block">
                       E-mail *
                     </label>
                     <input
@@ -101,13 +101,13 @@ export default function Contact() {
                       required
                       value={form.email}
                       onChange={handleChange}
-                      className="w-full border border-sand-200 bg-transparent px-4 py-3 text-sm font-sans font-light text-sand-700 outline-none focus:border-sand-500 transition-colors"
+                      className="w-full border border-sand-200 bg-transparent px-4 py-3 text-sm font-sans font-medium text-sand-700 outline-none focus:border-sand-500 transition-colors"
                     />
                   </div>
                 </div>
 
                 <div>
-                  <label className="text-xs tracking-widest uppercase font-sans font-light text-sand-400 mb-2 block">
+                  <label className="text-xs tracking-widest uppercase font-sans font-medium text-sand-700 mb-2 block">
                     Telefon
                   </label>
                   <input
@@ -115,13 +115,13 @@ export default function Contact() {
                     name="phone"
                     value={form.phone}
                     onChange={handleChange}
-                    className="w-full border border-sand-200 bg-transparent px-4 py-3 text-sm font-sans font-light text-sand-700 outline-none focus:border-sand-500 transition-colors"
+                    className="w-full border border-sand-200 bg-transparent px-4 py-3 text-sm font-sans font-medium text-sand-700 outline-none focus:border-sand-500 transition-colors"
                   />
                 </div>
 
                 <div className="grid sm:grid-cols-3 gap-6">
                   <div>
-                    <label className="text-xs tracking-widest uppercase font-sans font-light text-sand-400 mb-2 block">
+                    <label className="text-xs tracking-widest uppercase font-sans font-medium text-sand-700 mb-2 block">
                       Příjezd
                     </label>
                     <input
@@ -129,11 +129,11 @@ export default function Contact() {
                       name="checkin"
                       value={form.checkin}
                       onChange={handleChange}
-                      className="w-full border border-sand-200 bg-transparent px-4 py-3 text-sm font-sans font-light text-sand-700 outline-none focus:border-sand-500 transition-colors"
+                      className="w-full border border-sand-200 bg-transparent px-4 py-3 text-sm font-sans font-medium text-sand-700 outline-none focus:border-sand-500 transition-colors"
                     />
                   </div>
                   <div>
-                    <label className="text-xs tracking-widest uppercase font-sans font-light text-sand-400 mb-2 block">
+                    <label className="text-xs tracking-widest uppercase font-sans font-medium text-sand-700 mb-2 block">
                       Odjezd
                     </label>
                     <input
@@ -141,18 +141,18 @@ export default function Contact() {
                       name="checkout"
                       value={form.checkout}
                       onChange={handleChange}
-                      className="w-full border border-sand-200 bg-transparent px-4 py-3 text-sm font-sans font-light text-sand-700 outline-none focus:border-sand-500 transition-colors"
+                      className="w-full border border-sand-200 bg-transparent px-4 py-3 text-sm font-sans font-medium text-sand-700 outline-none focus:border-sand-500 transition-colors"
                     />
                   </div>
                   <div>
-                    <label className="text-xs tracking-widest uppercase font-sans font-light text-sand-400 mb-2 block">
+                    <label className="text-xs tracking-widest uppercase font-sans font-medium text-sand-700 mb-2 block">
                       Hosté
                     </label>
                     <select
                       name="guests"
                       value={form.guests}
                       onChange={handleChange}
-                      className="w-full border border-sand-200 bg-cream px-4 py-3 text-sm font-sans font-light text-sand-700 outline-none focus:border-sand-500 transition-colors"
+                      className="w-full border border-sand-200 bg-cream px-4 py-3 text-sm font-sans font-medium text-sand-700 outline-none focus:border-sand-500 transition-colors"
                     >
                       {[1,2,3,4,5].map((n) => (
                         <option key={n} value={n}>{n} {n === 1 ? 'osoba' : n < 5 ? 'osoby' : 'osob'}</option>
@@ -162,7 +162,7 @@ export default function Contact() {
                 </div>
 
                 <div>
-                  <label className="text-xs tracking-widest uppercase font-sans font-light text-sand-400 mb-2 block">
+                  <label className="text-xs tracking-widest uppercase font-sans font-medium text-sand-700 mb-2 block">
                     Zpráva
                   </label>
                   <textarea
@@ -170,7 +170,7 @@ export default function Contact() {
                     rows={4}
                     value={form.message}
                     onChange={handleChange}
-                    className="w-full border border-sand-200 bg-transparent px-4 py-3 text-sm font-sans font-light text-sand-700 outline-none focus:border-sand-500 transition-colors resize-none"
+                    className="w-full border border-sand-200 bg-transparent px-4 py-3 text-sm font-sans font-medium text-sand-700 outline-none focus:border-sand-500 transition-colors resize-none"
                     placeholder="Zvláštní přání, dotazy, počet dětí..."
                   />
                 </div>

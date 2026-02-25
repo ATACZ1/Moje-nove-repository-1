@@ -7,6 +7,12 @@ export default {
   theme: {
     extend: {
       colors: {
+        'brand-dark': '#2f1f18',   // deep espresso
+        'brand-mid':  '#6b4b36',   // warm brown
+        'brand-warm': '#c69c6d',   // warm accent (caramel)
+        'brand-cream':'#f6f2ee',   // page background / cream
+        'brand-light':'#efe8e0',   // very light warm
+        // keep some legacy tokens for compatibility
         sand: {
           50:  '#faf8f4',
           100: '#f5f0e8',
@@ -19,26 +25,18 @@ export default {
           800: '#735a3c',
           900: '#5e4a32',
         },
-        stone: {
-          warm: '#c8b89a',
-          light: '#e8ddd0',
-          mid:   '#b5a08a',
-        },
-        cream: '#faf8f4',
-        bark:  '#7c6242',
-        forest:'#4a5e4a',
       },
       fontFamily: {
-        serif:  ['"Cormorant Garamond"', '"Georgia"', 'serif'],
-        sans:   ['"Jost"', '"Inter"', 'sans-serif'],
-        display:['"Cormorant Garamond"', 'serif'],
+        serif:  ['"EB Garamond"', 'Georgia', 'serif'],
+        sans:   ['"Karla"', 'Inter', 'sans-serif'],
+        display:['"EB Garamond"', 'serif'],
       },
       letterSpacing: {
         widest2: '0.25em',
         widest3: '0.35em',
       },
       backgroundImage: {
-        'hero-gradient': 'linear-gradient(to bottom, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.35) 100%)',
+        'hero-gradient': 'linear-gradient(to bottom, rgba(0,0,0,0.12) 0%, rgba(0,0,0,0.35) 100%)',
       },
     },
   },

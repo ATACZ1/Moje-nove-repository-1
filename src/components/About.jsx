@@ -15,12 +15,12 @@ export default function About() {
               <em>příroda volá</em>
             </h2>
             <div className="divider" />
-            <p className="font-sans font-light text-sand-600 leading-relaxed mb-6">
+            <p className="font-sans font-medium text-sand-900 leading-relaxed mb-6">
               Penzion Vysočina se nachází uprostřed České republiky v chráněné krajinné oblasti
               Žďárské vrchy, v klidné obci Škrdlovice – pouhý 1 km od Velkého Dářka,
               nazývaného mořem Vysočiny.
             </p>
-            <p className="font-sans font-light text-sand-600 leading-relaxed mb-10">
+            <p className="font-sans font-medium text-sand-900 leading-relaxed mb-10">
               Nabízíme útulné pokoje s vlastním sociálním zařízením, domácí kuchyni v naší
               restauraci a snadný přístup ke stovkám kilometrů turistických, cyklistických
               i lyžařských tras.
@@ -36,8 +36,8 @@ export default function About() {
             />
             {/* Floating badge */}
             <div className="absolute -bottom-6 -left-6 bg-sand-100 border border-sand-200 p-6 hidden md:block">
-              <div className="text-3xl font-serif font-light text-sand-700">41</div>
-              <div className="text-xs tracking-widest uppercase font-sans font-light text-sand-500 mt-1">
+              <div className="text-3xl font-serif font-normal text-sand-700">41</div>
+              <div className="text-xs tracking-widest uppercase font-sans font-medium text-sand-800 mt-1">
                 lůžek celkem
               </div>
             </div>
@@ -56,17 +56,17 @@ export default function About() {
 
           <div className="order-1 md:order-2">
             <p className="section-label">Ráno začíná</p>
-            <h2 className="font-serif font-light text-3xl md:text-4xl text-sand-800 leading-snug mb-6">
+            <h2 className="font-serif font-normal text-4xl md:text-5xl text-brand-dark leading-tight mb-6">
               Vůně lesa a<br />
               <em>ticho jezera</em>
             </h2>
             <div className="divider" />
-            <p className="font-sans font-light text-sand-600 leading-relaxed mb-5">
+            <p className="font-sans font-medium text-sand-900 leading-relaxed mb-5">
               Probuďte se do ticha Vysočiny. Snídaně čeká na stole a za oknem se leskne hladina
               Velkého Dářka. Dnešní plán? Nechat ho jen tak plynout – procházka lesní stezkou,
               kolo podél břehu nebo jen plácek u vody.
             </p>
-            <p className="font-sans font-light text-sand-600 leading-relaxed">
+            <p className="font-sans font-medium text-sand-900 leading-relaxed">
               Každý den tady nabízí něco nečekaného: skály Žďárských vrchů, monumenty UNESCO
               v nedalekém Žďáru nad Sázavou nebo originální betonové sochy sochaře Michala Olšiaka,
               které jsou rozeseté po celém regionu.

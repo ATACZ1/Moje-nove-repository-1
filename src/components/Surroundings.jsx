@@ -64,7 +64,7 @@ export default function Surroundings() {
             <em>poznávat</em>
           </h2>
           <div className="divider" />
-          <p className="font-sans font-light text-sand-500 leading-relaxed">
+          <p className="font-sans font-medium text-sand-800 leading-relaxed">
             Kraj Žďárských vrchů nabízí každé roční období jedinečné zážitky –
             od koupání v Dářku přes pěší a cykloturistiku až po zimní lyžování a kulturní
             památky UNESCO.
@@ -84,14 +84,14 @@ export default function Surroundings() {
                       loading="lazy"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                     />
-                    <span className="absolute top-3 left-3 bg-sand-700/80 text-white text-xs px-2 py-0.5 font-light tracking-wide">
+                    <span className="absolute top-3 left-3 bg-sand-700/80 text-white text-xs px-2 py-0.5 font-medium tracking-wide">
                       {item.dist}
                     </span>
                   </div>
                   <div className="flex flex-col justify-center">
-                    <h3 className="font-serif font-light text-xl text-sand-800 mb-2">{item.title}</h3>
+                    <h3 className="font-serif font-normal text-xl text-sand-800 mb-2">{item.title}</h3>
                     <div className="w-6 h-px bg-sand-300 mb-3" />
-                    <p className="font-sans font-light text-sm text-sand-500 leading-relaxed">{item.desc}</p>
+                    <p className="font-sans font-medium text-sm text-sand-800 leading-relaxed">{item.desc}</p>
                   </div>
                 </div>
               ))}

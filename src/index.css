@@ -8,35 +8,36 @@
   }
 
   body {
-    @apply bg-cream text-sand-800 font-sans antialiased;
+    /* warm cream background and deep brown text */
+    @apply bg-brand-cream text-brand-dark font-sans font-medium antialiased;
   }
 
   h1, h2, h3, h4 {
-    @apply font-serif;
+    @apply font-serif font-normal;
   }
 }
 
 @layer components {
   .btn-primary {
-    @apply inline-block px-8 py-3 border border-sand-600 text-sand-700 text-xs tracking-widest2 uppercase font-sans font-light
-           hover:bg-sand-600 hover:text-white transition-all duration-300;
+    @apply inline-block px-8 py-3 border border-brand-mid text-brand-mid text-xs tracking-widest2 uppercase font-sans font-medium
+           hover:bg-brand-mid hover:text-white transition-all duration-300;
   }
 
   .btn-dark {
-    @apply inline-block px-8 py-3 bg-sand-700 text-white text-xs tracking-widest2 uppercase font-sans font-light
-           hover:bg-sand-800 transition-all duration-300;
+    @apply inline-block px-8 py-3 bg-brand-dark text-white text-xs tracking-widest2 uppercase font-sans font-medium
+           hover:bg-black/90 transition-all duration-300;
   }
 
   .section-label {
-    @apply text-xs tracking-widest3 uppercase font-sans font-light text-sand-500 mb-4;
+    @apply text-xs tracking-widest3 uppercase font-sans font-medium text-brand-mid mb-4;
   }
 
   .section-title {
-    @apply font-serif font-light text-4xl md:text-5xl text-sand-800 leading-tight;
+    @apply font-serif font-normal text-4xl md:text-5xl text-brand-dark leading-tight;
   }
 
   .divider {
-    @apply w-12 h-px bg-sand-400 my-6;
+    @apply w-12 h-px bg-brand-light my-6;
   }
 }
 

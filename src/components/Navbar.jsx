@@ -17,14 +17,14 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  const linkClass = `text-xs tracking-widest2 uppercase font-light transition-colors duration-300 ${
-    scrolled ? 'text-sand-700 hover:text-sand-900' : 'text-white/90 hover:text-white'
+  const linkClass = `text-xs tracking-widest2 uppercase font-normal transition-colors duration-300 ${
+    scrolled ? 'text-brand-cream/90 hover:text-white' : 'text-white/90 hover:text-white'
   }`
 
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled ? 'bg-cream/95 backdrop-blur-sm shadow-sm' : 'bg-transparent'
+        scrolled ? 'bg-brand-dark/95 backdrop-blur-sm shadow-lg' : 'bg-transparent'
       }`}
     >
       {/* Desktop: 3-column grid */}
@@ -41,11 +41,15 @@ export default function Navbar() {
         {/* Center logo */}
         <a href="#" className="text-center px-10">
           <div className={`font-serif font-light tracking-wider transition-colors duration-300 ${
-            scrolled ? 'text-sand-800' : 'text-white'
+            scrolled ? 'text-white' : 'text-white'
           }`}>
-            <div className="text-[10px] tracking-widest3 uppercase font-sans font-light opacity-70">Penzion</div>
+            <div className={`text-[10px] tracking-widest3 uppercase font-sans font-normal transition-colors duration-300 ${
+              scrolled ? 'text-brand-warm' : 'text-white/70'
+            }`}>Penzion</div>
             <div className="text-2xl leading-none whitespace-nowrap">Vysočina</div>
-            <div className="text-[10px] tracking-widest3 uppercase font-sans font-light opacity-70">Škrdlovice</div>
+            <div className={`text-[10px] tracking-widest3 uppercase font-sans font-normal transition-colors duration-300 ${
+              scrolled ? 'text-brand-warm' : 'text-white/70'
+            }`}>Škrdlovice</div>
           </div>
         </a>
 
@@ -56,9 +60,9 @@ export default function Navbar() {
           ))}
           <a
             href="#pokoje"
-            className={`text-xs tracking-widest2 uppercase font-light px-6 py-2.5 border transition-all duration-300 ${
+            className={`text-xs tracking-widest2 uppercase font-normal px-6 py-2.5 border transition-all duration-300 ${
               scrolled
-                ? 'border-sand-600 text-sand-700 hover:bg-sand-600 hover:text-white'
+                ? 'border-brand-warm text-brand-warm hover:bg-brand-warm hover:text-brand-dark'
                 : 'border-white/70 text-white hover:bg-white/20'
             }`}
           >
@@ -74,25 +78,27 @@ export default function Navbar() {
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Menu"
         >
-          <span className={`block w-6 h-px transition-all duration-300 ${scrolled ? 'bg-sand-700' : 'bg-white'}`} />
-          <span className={`block w-6 h-px transition-all duration-300 ${scrolled ? 'bg-sand-700' : 'bg-white'}`} />
-          <span className={`block w-4 h-px transition-all duration-300 ${scrolled ? 'bg-sand-700' : 'bg-white'}`} />
+          <span className={`block w-6 h-px transition-all duration-300 ${scrolled ? 'bg-white' : 'bg-white'}`} />
+          <span className={`block w-6 h-px transition-all duration-300 ${scrolled ? 'bg-white' : 'bg-white'}`} />
+          <span className={`block w-4 h-px transition-all duration-300 ${scrolled ? 'bg-white' : 'bg-white'}`} />
         </button>
 
         <a href="#" className="text-center">
           <div className={`font-serif font-light transition-colors duration-300 ${
-            scrolled ? 'text-sand-800' : 'text-white'
+            scrolled ? 'text-white' : 'text-white'
           }`}>
-            <div className="text-[9px] tracking-widest3 uppercase font-sans font-light opacity-70">Penzion</div>
+            <div className={`text-[9px] tracking-widest3 uppercase font-sans font-normal ${
+              scrolled ? 'text-brand-warm' : 'text-white/70'
+            }`}>Penzion</div>
             <div className="text-xl leading-none">Vysočina</div>
           </div>
         </a>
 
         <a
           href="#pokoje"
-          className={`text-xs tracking-widest uppercase font-light px-4 py-2 border transition-all duration-300 ${
+          className={`text-xs tracking-widest uppercase font-normal px-4 py-2 border transition-all duration-300 ${
             scrolled
-              ? 'border-sand-600 text-sand-700'
+              ? 'border-brand-warm text-brand-warm'
               : 'border-white/70 text-white'
           }`}
         >
@@ -104,7 +110,7 @@ export default function Navbar() {
       <div
         className={`md:hidden transition-all duration-300 overflow-hidden ${
           menuOpen ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0'
-        } bg-cream/98 backdrop-blur-sm`}
+        } bg-brand-dark/98 backdrop-blur-sm`}
       >
         <ul className="flex flex-col px-6 py-4 gap-4">
           {navLinks.map((link) => (
@@ -112,7 +118,7 @@ export default function Navbar() {
               <a
                 href={link.href}
                 onClick={() => setMenuOpen(false)}
-                className="text-xs tracking-widest2 uppercase font-light text-sand-700 hover:text-sand-900 transition-colors"
+                className="text-xs tracking-widest2 uppercase font-normal text-brand-cream/80 hover:text-white transition-colors"
               >
                 {link.label}
               </a>

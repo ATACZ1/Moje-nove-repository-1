@@ -55,7 +55,7 @@ function RoomCard({ room }) {
       {/* Image */}
       <div className="relative overflow-hidden aspect-[4/3]">
         {room.badge && (
-          <span className="absolute top-4 left-4 z-10 bg-sand-600 text-white text-xs tracking-widest uppercase font-light px-3 py-1">
+          <span className="absolute top-4 left-4 z-10 bg-sand-600 text-white text-xs tracking-widest uppercase font-medium px-3 py-1">
             {room.badge}
           </span>
         )}
@@ -70,18 +70,18 @@ function RoomCard({ room }) {
       {/* Content */}
       <div className="p-8 flex flex-col flex-1">
         <div className="flex items-start justify-between mb-3">
-          <h3 className="font-serif font-light text-2xl text-sand-800">{room.name}</h3>
+          <h3 className="font-serif font-normal text-2xl text-sand-800">{room.name}</h3>
           <div className="text-right shrink-0 ml-4">
-            <div className="font-serif font-light text-2xl text-sand-700">
+            <div className="font-serif font-normal text-2xl text-sand-700">
               {room.price.toLocaleString('cs-CZ')} Kč
             </div>
-            <div className="text-xs text-sand-400 font-light">/noc vč. snídaně</div>
+            <div className="text-xs text-sand-700 font-medium">/noc vč. snídaně</div>
           </div>
         </div>
 
         <div className="w-8 h-px bg-sand-300 mb-4" />
 
-        <p className="font-sans font-light text-sm text-sand-500 leading-relaxed mb-6 flex-1">
+        <p className="font-sans font-medium text-sm text-sand-800 leading-relaxed mb-6 flex-1">
           {room.description}
         </p>
 
@@ -90,7 +90,7 @@ function RoomCard({ room }) {
           {room.features.map((f) => (
             <li
               key={f}
-              className="text-xs tracking-wide font-light text-sand-500 border border-sand-200 px-3 py-1"
+              className="text-xs tracking-wide font-medium text-sand-800 border border-sand-200 px-3 py-1"
             >
               {f}
             </li>
@@ -118,7 +118,7 @@ export default function Rooms() {
             <em>a apartmány</em>
           </h2>
           <div className="divider" />
-          <p className="font-sans font-light text-sand-500 leading-relaxed">
+          <p className="font-sans font-medium text-sand-800 leading-relaxed">
             Všechny pokoje mají vlastní koupelnu se sprchovým koutem, televizi a bezplatné
             Wi-Fi. Ceny jsou za pokoj a noc včetně snídaně.
           </p>
@@ -140,16 +140,16 @@ export default function Rooms() {
             { label: 'Děti do 3 let', value: 'Zdarma' },
           ].map((item) => (
             <div key={item.label}>
-              <div className="text-xs tracking-widest uppercase font-sans font-light text-sand-400 mb-1">
+              <div className="text-xs tracking-widest uppercase font-sans font-medium text-sand-700 mb-1">
                 {item.label}
               </div>
-              <div className="font-serif font-light text-xl text-sand-700">{item.value}</div>
+              <div className="font-serif font-normal text-xl text-sand-700">{item.value}</div>
             </div>
           ))}
         </div>
 
         {/* Solo traveller note */}
-        <p className="mt-6 text-xs font-light font-sans text-sand-400 italic">
+        <p className="mt-6 text-xs font-medium font-sans text-sand-700 italic">
           * Při obsazení pokoje pouze 1 osobou: 890 Kč / noc. Delší pobyt a větší skupiny – cena dohodou.
         </p>
       </div>

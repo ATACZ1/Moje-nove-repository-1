@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import heroBg from '../assets/hero-bg.png'
 
 const GREETINGS = [
   'Vítejte', 'Welcome', 'Willkommen', 'Bienvenue', 'Benvenuti',
@@ -37,7 +38,7 @@ export default function Hero() {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&q=80')`,
+          backgroundImage: `url('${heroBg}')`,
         }}
       />
       {/* Overlay */}
@@ -58,7 +59,7 @@ export default function Hero() {
         </div>
 
         {/* Tagline */}
-        <p className="fade-up-delay-1 font-sans font-light text-sm md:text-base tracking-widest uppercase text-white/80 mb-3">
+        <p className="fade-up-delay-1 font-sans font-normal text-sm md:text-base tracking-widest uppercase text-white/80 mb-3">
           Penzion Vysočina · Škrdlovice
         </p>
         <div className="fade-up-delay-2 w-12 h-px bg-white/50 mx-auto mb-8" />
@@ -68,7 +69,7 @@ export default function Hero() {
 
         <a
           href="#pokoje"
-          className="fade-up-delay-3 inline-block border border-white/70 text-white text-xs tracking-widest2 uppercase font-sans font-light px-10 py-4 hover:bg-white/20 transition-all duration-300"
+          className="fade-up-delay-3 inline-block border border-white/70 text-white text-xs tracking-widest2 uppercase font-sans font-normal px-10 py-4 hover:bg-white/20 transition-all duration-300"
         >
           Prozkoumat ubytování
         </a>
@@ -76,7 +77,7 @@ export default function Hero() {
 
       {/* Scroll indicator */}
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/60">
-        <span className="text-xs tracking-widest uppercase font-sans font-light">Posunout dolů</span>
+        <span className="text-xs tracking-widest uppercase font-sans font-normal">Posunout dolů</span>
         <div className="w-px h-10 bg-white/30 animate-pulse" />
       </div>
     </section>

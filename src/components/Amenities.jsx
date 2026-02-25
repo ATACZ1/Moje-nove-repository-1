@@ -18,7 +18,7 @@ export default function Amenities() {
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 md:gap-10">
           {amenities.map((item) => (
             <div key={item.label} className="flex items-center justify-center text-center">
-              <span className="text-xs tracking-widest uppercase font-sans font-light text-sand-600">
+              <span className="text-xs tracking-widest uppercase font-sans font-medium text-sand-900">
                 {item.label}
               </span>
             </div>
